@@ -1,0 +1,138 @@
+.order {
+}
+
+.order-list {
+  padding: 24px 0;
+
+
+  // order-list__wrapper
+  &__wrapper {
+
+  }
+
+  // order-list__title
+  &__title {
+    font-size: 2em;
+    margin-bottom: 24px;
+  }
+
+  // order-list__cards
+  &__cards {
+
+  }
+}
+
+
+
+.cards-order {
+
+  &:not(&:last-child) {
+    margin-bottom: 16px;
+  }
+
+
+  //  cards-order__item
+  &__item {
+
+  }
+
+  //  cards-order__top
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $light-gray;
+    padding: 0 0 12px;
+
+  }
+
+  //  cards-order__title
+  &__title {
+    h2 {
+      font-size: 1.5em;
+    }
+    p, h2{
+      font-family: $description-family;
+
+    }
+  }
+
+  //  cards-order__info
+  &__info {
+    background-color: $yellow;
+    border-radius: 46px;
+    padding: 6px 16px;
+    height: fit-content;
+    border: 1px solid $light-gray;
+    span {
+      font-size: .75em;
+    }
+  }
+
+  //  cards-list__bottom
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0 0;
+  }
+
+  //  cards-list__images
+  &__images {
+    display: flex;
+
+  }
+
+  //  cards-list__min-img
+  &__min-img {
+    width: 40px;
+    height: 40px;
+    background-color: $bg-white;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+
+
+    &:not(&:last-child){
+      margin-right: 4px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    span {
+      font-family: $description-family;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  //  cards-list__price
+  &__price {
+    text-align: right;
+    line-height: 1.25em;
+
+  }
+
+  //  cards-list__count
+  &__count {
+
+    p {
+      font-family: $description-family;
+    }
+  }
+
+  //  cards-list__rub
+  &__rub {
+    font-size: 1.5em;
+
+    span {
+
+      font-family: $description-family;
+    }
+
+  }
+}

@@ -1,0 +1,46 @@
+.itc-select {
+  position: relative;
+}
+
+.itc-select__toggle {
+  cursor: pointer;
+
+}
+
+.itc-select__toggle::after {
+  content: "";
+  transition: transform $animation;
+}
+
+.itc-select__toggle:focus {
+  outline: none;
+}
+
+.itc-select_show .itc-select__toggle::after {
+  transform: rotate(180deg) translateY(50%);
+}
+
+.itc-select__dropdown {
+  position: absolute;
+  top: 2.5rem;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  display: none;
+  max-height: 10rem;
+  overflow-y: auto;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.itc-select_show .itc-select__dropdown {
+  display: block;
+}
+
+
+
+
+.itc-select__option {
+  padding: 0.375rem 0.75rem;
+}
+

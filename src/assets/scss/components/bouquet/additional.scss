@@ -1,0 +1,67 @@
+.bouquet-additional {
+  margin-bottom: 51px;
+  // bouquet-additional__title
+  &__title {
+    font-size: 1.5em;
+    border-bottom: solid $black 1px;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+  }
+  // bouquet-additional__cards
+  &__cards {
+
+  }
+}
+
+.cards-bouquet {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 8px;
+  row-gap: 25px;
+
+  // cards-bouquet__item
+  &__item {
+    flex: 0 1 48%;
+  }
+
+  // cards-bouquet__img
+  &__img {
+    height: 166px;
+    border-radius: 8px;
+    margin-bottom: 13px;
+
+  }
+
+  // cards-bouquet__name
+  &__name {
+    margin-bottom: 8px;
+  }
+
+  // cards-bouquet__info
+  &__info {
+    font-size: .75em;
+    font-weight: 400;
+    color: $light-gray;
+    margin-bottom: 17px;
+
+  }
+
+  // cards-bouquet__price
+  &__price {
+    margin-bottom: 13px;
+    float: left;
+    font-size: 1.25em;
+
+  }
+
+  // cards-bouquet__other
+  &__other {
+    float: right;
+  input
+    {
+
+      background-color: #EBEBEB !important;
+    }
+  }
+}
+

@@ -1,0 +1,119 @@
+.bargain {
+  margin-bottom: 40px;
+  // bargain__card
+  &__card {
+  }
+
+  // bargain__top
+  &__top {
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid $dark-gray;
+  }
+
+  // bargain__promo
+  &__promo {
+    display: flex;
+    justify-content: space-between;
+    background-color: $bg-white;
+    padding: 14px 16px;
+    border-radius: 8px;
+
+    label {
+      flex: 1 0 auto;
+    }
+    input {
+      border: none;
+      background: none;
+      outline: none;
+      color: $dark-gray;
+    }
+    input[type="text"] {
+      border: none;
+      background: none;
+      outline: none;
+      width: 100%;
+      font-weight: 400;
+
+    }
+    input[type="button"] {
+
+      border-left: 1px $light-gray solid;
+      padding: 0 0  0 8px;
+      cursor: pointer;
+    }
+
+  }
+
+  // bargain__middle
+  &__middle {
+    border-bottom: 1px solid $dark-gray;
+    margin-bottom: 16px;
+    &-item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 12px;
+
+      span {
+        font-weight: 400;
+        color: $dark-gray;
+      }
+
+       input{
+         font-weight: 400;
+
+        border: none;
+         outline: none;
+        text-align: right;
+      }
+      &:last-child {
+        margin-bottom: 16px;
+      }
+
+    }
+  }
+
+  // bargain__sum
+  &__sum {
+  }
+
+  // bargain__delivery
+  &__delivery {
+  }
+
+  // bargain__discount
+  &__discount {
+    input {
+      color: #EB271C;
+    }
+  }
+
+  // bargain__promo-bottom
+  &__promo-bottom {
+    input {
+      color: #EB271C;
+    }
+  }
+
+  // bargain__bottom
+  &__bottom {
+    .button {
+    }
+
+  }
+
+  // bargain__result
+  &__result {
+    font-size: 1.25em;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+
+    span {
+      font-weight: 400;
+
+    }
+  }
+
+
+}

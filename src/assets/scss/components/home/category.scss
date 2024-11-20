@@ -1,0 +1,53 @@
+.category {
+  margin-bottom: 60px;
+
+  // category__title
+  &__title {
+    margin-bottom: 24px;
+  }
+
+  // category__list
+  &__list {
+
+  }
+
+  // category__item
+  &__item {
+
+  }
+}
+
+
+.card {
+  margin-bottom: 24px;
+  display: flex;
+  height: 250px;
+  padding: 16px;
+  border-radius: 25px;
+  justify-content: space-between;
+
+  box-shadow: 0  29px 11px rgba(41, 41, 41, 0.01), 0  16px 10px rgba(41, 41, 41, 0.05), 0 7px 7px rgba(41, 41, 41, 0.09), 0 2px 4px rgba(41, 41, 41, 0.1);
+
+
+  // card__title
+  &__title {
+    font-size: 1.5em;
+
+  }
+  // card__arrow
+  &__arrow {
+    background-color: $white;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    position: relative;
+    align-self: end;
+
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}

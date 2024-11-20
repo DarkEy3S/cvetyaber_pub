@@ -1,0 +1,15 @@
+.banner {
+  // banner__title
+  background-position: center center;
+  margin-bottom: 41px;
+  &__title {
+    min-height: 500px;
+
+    display: flex;
+    height: calc(100vh - 64px);
+    align-items: flex-end;
+    color: $yellow;
+    padding-bottom:  30px;
+    font-size: 1.75rem;
+  }
+}

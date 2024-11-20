@@ -1,0 +1,36 @@
+@mixin adaptive-font($pcSize, $mobSize) {
+	$addSize: $pcSize - $mobSize;
+	$mw: $mw - 320;
+	font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$mw}));
+}
+
+:root {
+	--color-black: #000;
+	--color-yellow: #FEDF00;
+	--color-dark-gray: #6f6e6e;
+	--color-light-gray: #b2b1b1;
+	--color-pink: #f4afa4;
+	--color-second-dark-bg: #748077;
+	--color-white-bg: #F1F1F1;
+	--color-white: #FFFFFF;
+	--color-background-gray: #D3D3D3;
+
+	--animation-easin-in-out: ease-in-out .3s;
+}
+
+$second-dark-bg: var(--color-second-dark-bg);
+$black: var(--color-black);
+$yellow: var(--color-yellow);
+$dark-gray: var(--color-dark-gray);
+$light-gray: var(--color-light-gray);
+$pink: var(--color-pink);
+$bg-white: var(--color-white-bg);
+$white: var(--color-white);
+$background-gray: var(--color-background-gray);
+
+$animation: var(--animation-easin-in-out);
+
+$main-family: "GolosText";
+$secondary-family: "TRIAL_Oceanic";
+$description-family: "TTNormsPro";
+$inter-family: 'Inter';

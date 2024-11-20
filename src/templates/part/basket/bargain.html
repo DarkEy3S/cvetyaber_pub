@@ -1,0 +1,45 @@
+<section class="bargain">
+    <div class="container">
+        <form class="bargain__card card-ui">
+            <div class="bargain__top">
+                <div class="bargain__promo">
+                    <label for="promo"><input placeholder="Промо-код" type="text" name="promo" id="promo"
+                                              class="bargain__promo-input"></label>
+                    <input type="button" value="Применить">
+                </div>
+            </div>
+            <div class="bargain__middle">
+                <div class="bargain__sum bargain__middle-item">
+                    <span>Сумма заказа</span>
+                    <label for="sum"><input type="text" readonly name="sum" id="sum"
+                                            value="12300₽"></label>
+                </div>
+                <div class="bargain__delivery bargain__middle-item">
+                    <span>Доставка</span>
+                    <label for="delivery"><input type="text" readonly name="delivery"
+                                                 id="delivery"
+                                                 value="Бесплатно"></label>
+
+                </div>
+                <div class="bargain__discount bargain__middle-item"><span>Скидка</span> <label for="discount"><input
+                    id="discount" name="discount"
+                    readonly
+                    type="text"
+                    value="-0₽"></label>
+                </div>
+                <div class="bargain__promo-bottom bargain__middle-item"><span>Промокод</span><label for="promo-bottom">
+                    <input type="text" readonly name="promo-bottom" id="promo-bottom" value="-0₽"></label>
+                </div>
+
+            </div>
+            <div class="bargain__bottom">
+                <div class="bargain__result">
+                    <span>Итого</span>
+                    <span>12300₽</span>
+                </div>
+                <button type="submit" class="button">Перейти к оплате</button>
+            </div>
+        </form>
+
+    </div>
+</section>

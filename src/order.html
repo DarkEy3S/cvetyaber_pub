@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @@include('./templates/components/head.html', {})
+</head>
+<body class="order">
+<div class="wrapper">
+    @@include('./templates/components/header.html', {})
+    <main class="order-list">
+        <div class="container">
+            <div class="order-list__wrapper">
+                <div class="order-list__title">
+                    <h1 class="bold">Заказы</h1>
+                </div>
+                <div class="order-list__cards cards-order card-ui">
+                    <div class="cards-order__item">
+                        <div class="cards-order__top">
+                            <div class="cards-order__title">
+                                <h2>Заказ №343</h2>
+                                <p class="regular">13 февраля 20:23</p>
+                            </div>
+                            <div class="cards-order__info">
+                                <span>Выполнен</span>
+                            </div>
+                        </div>
+                        <div class="cards-order__bottom">
+                            <div class="cards-order__images">
+                                <div class="cards-order__min-img ">
+                                    <img src="@img/img_3.png" alt="">
+                                </div>
+                                <div class="cards-order__min-img ">
+                                    <img src="@img/img_2.png" alt="">
+                                </div>
+                                <div class="cards-order__min-img ">
+                                    <img src="@img/img_1.png" alt="">
+                                </div>
+
+                            </div>
+                            <div class="cards-order__price">
+                                <div class="cards-order__count">
+                                    <p class="regular">3 товара</p>
+                                </div>
+                                <div class="cards-order__rub">
+                                    <span>
+                                        6300₽
+
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-list__cards cards-order card-ui">
+                    <div class="cards-order__item">
+                        <div class="cards-order__top">
+                            <div class="cards-order__title">
+                                <h2>Заказ №342</h2>
+                                <p class="regular">13 февраля 20:23</p>
+                            </div>
+                            <div class="cards-order__info">
+                                <span>Оформлен</span>
+                            </div>
+                        </div>
+                        <div class="cards-order__bottom">
+                            <div class="cards-order__images">
+                                <div class="cards-order__min-img ">
+                                    <img src="@img/img_4.png" alt="">
+                                </div>
+                                <div class="cards-order__min-img ">
+                                    <img src="@img/img_2.png" alt="">
+                                </div>
+                                <div class="cards-order__min-img ">
+                                    <img src="@img/img_1.png" alt="">
+                                </div>
+                                <div class="cards-order__min-img ">
+                                    <span>+3</span>
+                                </div>
+
+                            </div>
+                            <div class="cards-order__price">
+                                <div class="cards-order__count">
+                                    <p class="regular">6 товара</p>
+                                </div>
+                                <div class="cards-order__rub">
+                                    <span>
+                                        12600₽
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    @@include('./templates/components/footer.html', {})
+</div>
+</body>
+</html>

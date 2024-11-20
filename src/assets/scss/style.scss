@@ -1,0 +1,182 @@
+@import "global/fonts";
+@import 'global/mixin';
+@import 'global/ibg';
+@import 'global/marking';
+@import 'global/resetstyle';
+@import 'global/text';
+@import "global/itc-custom-select";
+
+.wrapper {
+  background-color: $bg-white;
+}
+
+@import "components/header";
+@import "components/home/banner";
+@import "components/home/category";
+@import "components/home/information";
+@import "components/order";
+@import "components/basket/card_order";
+@import "components/basket/bargain";
+@import "components/bouquet/bouquet-info";
+@import "components/bouquet/additional";
+@import "components/footer";
+
+
+
+.card-ui {
+  background-color: $white;
+  border: 1px solid $light-gray;
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 4px 8px 0 #0000000D, 0 15px 15px 0 #0000000A, 0 33px 20px 0 #00000008, 0 58px 23px 0 #00000003, 0 91px 26px 0 #00000000;
+}
+.counter {
+  position: relative;
+  input[type='number'] {
+    border-radius: 16px;
+    outline: none;
+    border: none;
+    text-align: center;
+    width: 86px;
+    height: 28px;
+    background-color: $bg-white;
+    font-family: $description-family;
+
+    -moz-appearance: textfield;
+
+  }
+  input[type='number']::-webkit-outer-spin-button,
+  input[type='number']::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+
+  &__plus {
+    position: absolute;
+    right: 4px;
+  }
+  &__minus {
+    position: absolute;
+    left: 4px;
+
+  }
+  span {
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: $white;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    svg {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  
+}
+
+.button {
+  background-color: $yellow;
+  border: none;
+  outline: none;
+  padding: 16px;
+  width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color $animation;
+  &:hover {
+    background-color: $background-gray;
+  }
+}
+
+.select-ul {
+  // select-ul__toggle
+
+  button {
+    outline: none;
+    border: none;
+    background: $bg-white;
+    padding: 8px 32px 8px 8px;
+    border-radius: 32px;
+    width: 100%;
+    text-align: left;
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50%;
+      right: 14px;
+      transform: translate(0, -50%);
+      background: url("@svg/arrow_select.svg") no-repeat;
+      height: 8px;
+      width: 12px;
+    }
+  }
+
+  ul {
+
+    border: 1px solid $bg-white;
+
+
+    li {
+      transition: background-color $animation;
+
+      &:not(:last-child) {
+        border-bottom: 1px solid $bg-white;
+      }
+
+      &:hover {
+        background-color: $bg-white;
+      }
+    }
+  }
+  .itc-select__dropdown {
+    overflow: hidden;
+    border-radius: 18px;
+    margin-top: 5px;
+
+  }
+
+  .itc-select__option_selected {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $light-gray;
+
+  }
+
+}
+
+.hit::after {
+  content: "";
+  background: url("@svg/hit.svg") center center / cover no-repeat;
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  width: 77px;
+  height: 20px;
+}
+
+.hit-background::after {
+  content: "";
+
+  background: url("@svg/hit-2.svg") center top / 40px 27px no-repeat;
+  position: absolute;
+  left: 8px;
+  width: 77px;
+  height: 27px;
+}
+
+.discount-20::after {
+  content: "";
+  z-index: 100;
+  background: url("@svg/discount-20.svg") center top / 40px 27px no-repeat;
+  position: absolute;
+  right: 16px;
+  top: 0;
+  width: 77px;
+  height: 27px;
+}

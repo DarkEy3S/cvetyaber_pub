@@ -1,0 +1,37 @@
+.information{
+  margin-bottom: 107px;
+
+  // information__title
+  &__title {
+    margin-bottom: 24px;
+  }
+  // information__list
+  &__list {
+    display: flex;
+    position: relative;
+    left: 0;
+  }
+  // information__item
+  &__item {
+  }
+}
+
+.card-information {
+  padding: 8px;
+  flex: 0 0 103px;
+  border: 1px $black solid;
+  border-radius: 8px;
+  height: 121px;
+  background-color: $white;
+  align-content: end;
+
+  &:not(&:first-child) {
+    margin: 0 5px;
+  }
+
+  // card-information__text
+  &__text {
+    font-family: $description-family;
+  }
+}
+

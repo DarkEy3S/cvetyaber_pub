@@ -1,0 +1,64 @@
+::selection {
+
+}
+
+.wrapper {
+  font-size: 16px;
+}
+
+
+
+p,a,span,h5,h6,button,li,ol,input {
+  font-family: $main-family;
+  margin: unset;
+  font-size: inherit;
+  font-weight: 500;
+
+}
+
+h2,h3,h4 {
+  font-family: $secondary-family;
+  margin: unset;
+  font-size: inherit;
+  font-weight: 500;
+}
+h1 {
+  font-family: $secondary-family;
+  margin: unset;
+  font-size: inherit;
+  font-weight: 500;
+
+}
+h1:not(body.home) {
+  font-family: $main-family;
+}
+
+a[class], a[class]> span {
+  color: inherit;
+  transition: color $animation;
+
+  &:hover {
+    color: darken(#fff,50%);
+  }
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.medium {
+  font-weight: 500;
+}
+
+.regular {
+  font-weight: 400;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 2em
+}

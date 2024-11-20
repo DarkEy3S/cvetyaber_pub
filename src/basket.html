@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @@include('./templates/components/head.html', {})
+</head>
+<body class="order">
+<div class="wrapper">
+    @@include('./templates/components/header.html', {})
+    <main class="order-list">
+        <div class="container">
+            <div class="order-list__wrapper">
+                <div class="order-list__title">
+                    <h1>Корзина</h1>
+                </div>
+            </div>
+        </div>
+
+        @@include('./templates/part/basket/card-order.html', {})
+        @@include('./templates/part/basket/bargain.html', {})
+    </main>
+
+    @@include('./templates/components/footer.html', {})
+</div>
+</body>
+</html>
