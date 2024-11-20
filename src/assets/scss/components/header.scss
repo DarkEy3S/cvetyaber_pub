@@ -7,7 +7,7 @@
   top: 0;
 
 }
-.header:not(body.home .header) {
+.header:not(body.home  .header) {
 
 }
 
@@ -19,9 +19,9 @@
 
 
   // not home header
-  &:not(body.home &) {
+  &:not(body.home  > div > .header) {
     background-color: $second-dark-bg;
-    .header {
+    & .header {
       &__burger {
         span {
           background-color: $white;
@@ -116,6 +116,18 @@
   }
 }
 
+//@starting-style {
+//
+//  .mobile-menu.active  {
+//    height: 0;
+//
+//  }
+//  .mobile-menu__list.active {
+//
+//    opacity: 0;
+//  }
+//}
+
 .mobile-menu {
   transition: height $animation;
   height: 0;
@@ -138,17 +150,7 @@
 }
 
 
-@starting-style {
 
-  .mobile-menu.active  {
-    height: 0;
-
-  }
-  .mobile-menu__list.active {
-
-    opacity: 0;
-  }
-}
 
 .mobile-menu {
   position: fixed;
