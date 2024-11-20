@@ -31,7 +31,7 @@
 ### Структура каталогов
 
 ```
-frontend-flowers
+cvetyaber_pub
 
 ├── dist Собранный проект
 │   ├── fonts Шрифты
